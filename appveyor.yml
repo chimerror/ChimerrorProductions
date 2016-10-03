@@ -19,14 +19,14 @@ install:
   - 7z x ..\Wyam\Wyam.zip -o..\Wyam -r
 
 build_script:
-  - ..\Wyam\wyam -r Blog --output ..\Output
+  - ..\Wyam\wyam -r Blog --output ..\Output --verbose
 
 on_success:
   - git config --global credential.helper store
   - git config --global user.email "foobardog@hotmail.com"
   - git config --global user.name "Jason Mitchell"
   - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
-  - git checkout active-site
+  - git checkout active-page
   - git rm -rf .
   - xcopy ..\Output . /E
   - git remote set-url origin https://github.com/foobardog/ChimerrorProductions.git
