@@ -1,0 +1,9 @@
+# NuGet Packages
+*.nupkg
+
+# Others
+*~
+*.swp
+
+# Wyam Output
+output/
