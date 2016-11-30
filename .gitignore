@@ -7,3 +7,6 @@
 
 # Wyam Output
 output/
+
+# Test Posts
+input/posts/markdown-test.md
