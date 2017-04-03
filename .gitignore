@@ -5,6 +5,9 @@
 *~
 *.swp
 
+# Nuget Output
+packages.xml
+
 # Wyam Output
 output/
 
