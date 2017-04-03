@@ -1,4 +1,4 @@
-
+﻿
 <!DOCTYPE html>
 <html lang="en">
         <head>
@@ -10,18 +10,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
 
         <link type="application/rss+xml" rel="alternate" title="Chimerror Productions" href="/feed.rss" />
-        <link type="application/atom+xml" rel="alternate" title="Chimerror Productions" href="/feed.atom" />
+                <link type="application/atom+xml" rel="alternate" title="Chimerror Productions" href="/feed.atom" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="/assets/css/prettify.css" rel="stylesheet">
+        <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/clean-blog.css" rel="stylesheet" />
         <link href="/assets/css/master.css" rel="stylesheet" />
-        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin-ext" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=PT+Mono&subset=latin-ext" rel="stylesheet">
+        <link href="/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <link href="/assets/css/override.css" rel="stylesheet" />
 
 
         <meta name="application-name" content="Chimerror Productions" />
@@ -33,24 +33,27 @@
         <meta property="og:url" content="http://chimerror.com/tags/behind_the_fursona" />
         <!-- TODO: More social graph meta tags -->
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>     
-        <script src="/assets/js/prettify.js"></script>
-        <script src="/assets/js/lang-clj.js"></script>
+        <script src="/assets/js/jquery.min.js"></script>
+        <script src="/assets/js/bootstrap.min.js"></script>     
+        <script src="/assets/js/highlight.pack.js"></script>   
         <script src="/assets/js/clean-blog.js"></script>
-        <script src="http://d3js.org/d3.v3.min.js"></script>
+        <script src="/assets/js/d3.v3.min.js"></script>
         <script src="/assets/js/trianglify.min.js"></script>
         <script src="/assets/js/Please-compressed.js"></script>
                 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
-                <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-                <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+                <script src="/assets/js/html5shiv.js"></script>
+                <script src="/assets/js/respond.min.js"></script>
         <![endif]-->
 
+        
+        
+
+
         </head>
-        <body onload="prettyPrint()">
+        <body>
                 
                 <!-- Navigation -->
                 <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -106,37 +109,46 @@
             <p class="post-meta">Posted on Sunday, December 4, 2016</p>            
         </div>   
 
+
+            <nav>
+                <ul class="pager">
+                    <li class="previous">                
+                    </li>
+                    <li class="next">
+                    </li>
+                </ul>
+            </nav>
             <hr class="visible-xs-block" />
         </div>
 		
         <div class="col-sm-4 col-sm-height">
-                <a role="button" href="/tags/behind_the_fursona" class="btn btn-primary btn-xs"> behind_the_fursona (1)</a>
-                <a role="button" href="/tags/biology" class="btn btn-default btn-xs"> biology (1)</a>
-                <a role="button" href="/tags/blackness" class="btn btn-default btn-xs"> blackness (2)</a>
-                <a role="button" href="/tags/cartoons" class="btn btn-default btn-xs"> cartoons (1)</a>
-                <a role="button" href="/tags/clean" class="btn btn-default btn-xs"> clean (1)</a>
-                <a role="button" href="/tags/cougar" class="btn btn-default btn-xs"> cougar (1)</a>
-                <a role="button" href="/tags/creator_news" class="btn btn-default btn-xs"> creator_news (1)</a>
-                <a role="button" href="/tags/f2m_transformation" class="btn btn-default btn-xs"> f2m_transformation (1)</a>
-                <a role="button" href="/tags/fiction" class="btn btn-default btn-xs"> fiction (1)</a>
-                <a role="button" href="/tags/furry" class="btn btn-default btn-xs"> furry (1)</a>
-                <a role="button" href="/tags/furry_lifestyle" class="btn btn-default btn-xs"> furry_lifestyle (1)</a>
-                <a role="button" href="/tags/furry_transformation" class="btn btn-default btn-xs"> furry_transformation (1)</a>
-                <a role="button" href="/tags/gender" class="btn btn-default btn-xs"> gender (1)</a>
-                <a role="button" href="/tags/identity" class="btn btn-default btn-xs"> identity (1)</a>
-                <a role="button" href="/tags/identity_shift" class="btn btn-default btn-xs"> identity_shift (1)</a>
-                <a role="button" href="/tags/m2f_transformation" class="btn btn-default btn-xs"> m2f_transformation (1)</a>
-                <a role="button" href="/tags/philosophy" class="btn btn-default btn-xs"> philosophy (1)</a>
-                <a role="button" href="/tags/politics" class="btn btn-default btn-xs"> politics (1)</a>
-                <a role="button" href="/tags/prose" class="btn btn-default btn-xs"> prose (1)</a>
-                <a role="button" href="/tags/race" class="btn btn-default btn-xs"> race (1)</a>
-                <a role="button" href="/tags/reality_shift" class="btn btn-default btn-xs"> reality_shift (1)</a>
-                <a role="button" href="/tags/short_form" class="btn btn-default btn-xs"> short_form (1)</a>
-                <a role="button" href="/tags/site_administration" class="btn btn-default btn-xs"> site_administration (1)</a>
-                <a role="button" href="/tags/squirrel" class="btn btn-default btn-xs"> squirrel (1)</a>
-                <a role="button" href="/tags/tftuesday" class="btn btn-default btn-xs"> TFTuesday (1)</a>
-                <a role="button" href="/tags/transformation" class="btn btn-default btn-xs"> transformation (1)</a>
-                <a role="button" href="/tags/transgender_transformation" class="btn btn-default btn-xs"> transgender_transformation (1)</a>
+                <a role="button" href="/tags/blackness" class="btn btn-default btn-xs">blackness (2)</a>
+                <a role="button" href="/tags/prose" class="btn btn-default btn-xs">prose (1)</a>
+                <a role="button" href="/tags/short_form" class="btn btn-default btn-xs">short_form (1)</a>
+                <a role="button" href="/tags/furry_lifestyle" class="btn btn-default btn-xs">furry_lifestyle (1)</a>
+                <a role="button" href="/tags/behind_the_fursona" class="btn btn-primary btn-xs">behind_the_fursona (1)</a>
+                <a role="button" href="/tags/identity" class="btn btn-default btn-xs">identity (1)</a>
+                <a role="button" href="/tags/philosophy" class="btn btn-default btn-xs">philosophy (1)</a>
+                <a role="button" href="/tags/biology" class="btn btn-default btn-xs">biology (1)</a>
+                <a role="button" href="/tags/politics" class="btn btn-default btn-xs">politics (1)</a>
+                <a role="button" href="/tags/race" class="btn btn-default btn-xs">race (1)</a>
+                <a role="button" href="/tags/fiction" class="btn btn-default btn-xs">fiction (1)</a>
+                <a role="button" href="/tags/transformation" class="btn btn-default btn-xs">transformation (1)</a>
+                <a role="button" href="/tags/cartoons" class="btn btn-default btn-xs">cartoons (1)</a>
+                <a role="button" href="/tags/furry" class="btn btn-default btn-xs">furry (1)</a>
+                <a role="button" href="/tags/transgender_transformation" class="btn btn-default btn-xs">transgender_transformation (1)</a>
+                <a role="button" href="/tags/furry_transformation" class="btn btn-default btn-xs">furry_transformation (1)</a>
+                <a role="button" href="/tags/m2f_transformation" class="btn btn-default btn-xs">m2f_transformation (1)</a>
+                <a role="button" href="/tags/f2m_transformation" class="btn btn-default btn-xs">f2m_transformation (1)</a>
+                <a role="button" href="/tags/squirrel" class="btn btn-default btn-xs">squirrel (1)</a>
+                <a role="button" href="/tags/cougar" class="btn btn-default btn-xs">cougar (1)</a>
+                <a role="button" href="/tags/reality_shift" class="btn btn-default btn-xs">reality_shift (1)</a>
+                <a role="button" href="/tags/identity_shift" class="btn btn-default btn-xs">identity_shift (1)</a>
+                <a role="button" href="/tags/gender" class="btn btn-default btn-xs">gender (1)</a>
+                <a role="button" href="/tags/clean" class="btn btn-default btn-xs">clean (1)</a>
+                <a role="button" href="/tags/tftuesday" class="btn btn-default btn-xs">TFTuesday (1)</a>
+                <a role="button" href="/tags/site_administration" class="btn btn-default btn-xs">site_administration (1)</a>
+                <a role="button" href="/tags/creator_news" class="btn btn-default btn-xs">creator_news (1)</a>
         </div>
     </div>
 </div>
@@ -152,18 +164,22 @@
         <div class="row">
                 <div class="col-md-12 text-center">
                     <p class="copyright text-muted">
-                        Copyright © 2016
+                        Copyright © 2017
                         <br />
-                        <a href="/feed.rss"><i class="fa fa-rss"></i> RSS Feed</a> | <a href="/feed.atom"><i class="fa fa-rss"></i> Atom Feed</a>
+                            <a href="/feed.rss"><i class="fa fa-rss"></i> RSS Feed</a>
+                        |
+                            <a href="/feed.atom"><i class="fa fa-rss"></i> Atom Feed</a>
                         <br />
-                        <strong><a href="http://wyam.io">Generated by Wyam</a></strong>
+                        <strong><a href="https://wyam.io">Generated by Wyam</a></strong>
                     </p>
                 </div>
         </div>
 </div>
+
                 </footer> 
 
                 
+                <script>hljs.initHighlightingOnLoad();</script>
 
                         <script type="text/javascript">                
                                 // Header background                        
