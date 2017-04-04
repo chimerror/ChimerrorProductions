@@ -1,5 +1,6 @@
 #recipe Blog
-Settings.Host = "chimerror.com";
-GlobalMetadata["Title"] = "Chimerror Productions";
-GlobalMetadata["Description"] = "Chimerror Productions";
-GlobalMetadata["Intro"] = "Welcome to Chimerror Productions! Stay a while, you may find it a transformative experience. ;3";
+Settings[Keys.Host] = "chimerror.com";
+Settings[BlogKeys.Title] = "Chimerror Productions";
+Settings[BlogKeys.Description] = "Chimerror Productions";
+Settings[BlogKeys.Intro] = "Welcome to Chimerror Productions! Stay a while, you may find it a transformative experience. ;3";
+Settings[BlogKeys.CaseInsensitiveTags] = true;

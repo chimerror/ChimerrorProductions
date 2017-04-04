@@ -1,7 +1,27 @@
+@using System.IO
 @{
     var Lead = Model.String(BlogKeys.Lead);
     var Published = Model.Get<DateTime>(BlogKeys.Published);   
     var Tags = Model.Get<string[]>(BlogKeys.Tags);
+    var FileBase = Model.String(Keys.SourceFileDir) + "/" + Model.String(Keys.SourceFileBase);
+    var DocxVersion = FileBase.Substring(8) + ".docx";
+    var DocxVersionExists = File.Exists(DocxVersion);
+    var EpubVersion = FileBase.Substring(8) + ".epub";
+    var EpubVersionExists = File.Exists(EpubVersion);
+    var OdtVersion = FileBase.Substring(8) + ".odt";
+    var OdtVersionExists = File.Exists(OdtVersion);
+    var PdfVersion = FileBase.Substring(8) + ".pdf";
+    var PdfVersionExists = File.Exists(PdfVersion);
+    var TxtVersion = FileBase.Substring(8) + ".txt";
+    var TxtVersionExists = File.Exists(TxtVersion);
+    var AltVersionExists = DocxVersionExists || EpubVersionExists || OdtVersionExists ||
+                           PdfVersionExists || TxtVersionExists;
+    var RelativeFileBase = Model.String(Keys.SourceFileBase);
+    var RelativeDocxVersion = RelativeFileBase + ".docx";
+    var RelativeEpubVersion = RelativeFileBase + ".epub";
+    var RelativeOdtVersion = RelativeFileBase + ".odt";
+    var RelativePdfVersion = RelativeFileBase + ".pdf";
+    var RelativeTxtVersion = RelativeFileBase + ".txt";
 }
 
 <div class="post-heading">
@@ -14,6 +34,31 @@
         @if (Published != default(DateTime))
         {
             <text>Published on @Published.ToLongDateString()<br></text>
+        }
+        @if (AltVersionExists)
+        {
+            <text>Download as: </text>
+            if (DocxVersionExists)
+            {
+                <a href="@RelativeDocxVersion">DOCX</a>
+            }
+            if (EpubVersionExists)
+            {
+                <a href="@RelativeEpubVersion">EPUB</a>
+            }
+            if (OdtVersionExists)
+            {
+                <a href="@RelativeOdtVersion">ODT</a>
+            }
+            if (PdfVersionExists)
+            {
+                <a href="@RelativePdfVersion">PDF</a>
+            }
+            if (TxtVersionExists)
+            {
+                <a href="@RelativeTxtVersion">TXT</a>
+            }
+            <br/>
         }
     </div>
     @if (Tags != null)
