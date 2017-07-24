@@ -4,8 +4,18 @@
 	<id>http://chimerror.com/</id>
 	<title>Chimerror Productions</title>
 	<rights>2017</rights>
-	<updated>2017-07-24T21:41:05Z</updated>
+	<updated>2017-07-24T21:50:23Z</updated>
 	<subtitle>Chimerror Productions</subtitle>
+	<entry>
+		<link href="http://chimerror.com/posts/at-log-last-an-update" />
+		<id>http://chimerror.com/posts/at-log-last-an-update</id>
+		<title>At Long Last, an Update</title>
+		<updated>2017-07-24T00:00:00Z</updated>
+		<content>&lt;p&gt;I’m finally making an update to this website after so long of leaving it dormant. I would love to have this website be a place where I update often, and perhaps tied with my Patreon. Towards that end, starting tomorrow, I’m going to try to make more common work posts covering what I’m working on, etc.&lt;/p&gt;
+&lt;p&gt;This post is both an update, and a test of my website pipeline. Don’t have much more to say.&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;I’m finally making an update to this website after so long of leaving it dormant. I would love to have this website be a place where I update often, and perhaps tied with my Patreon. Towards that end, starting tomorrow, I’m going to try to make more common work posts covering what I’m working on, etc.&lt;/p&gt;</summary>
+	</entry>
 	<entry>
 		<link href="http://chimerror.com/posts/predators" />
 		<id>http://chimerror.com/posts/predators</id>
