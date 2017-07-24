@@ -29,7 +29,7 @@
 
         <meta property="og:title" content="Chimerror Productions - All Tags" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="http://chimerror.com/tags" />
+        <meta property="og:url" content="http://chimerror.com/_Tags.cshtml" />
         <!-- TODO: More social graph meta tags -->
 
         <script src="/assets/js/jquery.min.js"></script>
@@ -39,6 +39,7 @@
         <script src="/assets/js/d3.v3.min.js"></script>
         <script src="/assets/js/trianglify.min.js"></script>
         <script src="/assets/js/Please-compressed.js"></script>
+        <script src="/assets/js/background-check.min.js"></script>
                 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -46,7 +47,6 @@
                 <script src="/assets/js/html5shiv.js"></script>
                 <script src="/assets/js/respond.min.js"></script>
         <![endif]-->
-
         
         
 
@@ -71,9 +71,9 @@
                                 <!-- Collect the nav links, forms, and other content for toggling -->
                                 <div class="collapse navbar-collapse" id="navbar-collapse">
                                         <ul class="nav navbar-nav navbar-right">
-                                                        <li><a href="/about">About Me</a></li>
-        <li><a href="/tags">All Tags</a></li>
-        <li><a href="/posts">Archive</a></li>
+                                                        <li><a href="/posts">Archive</a></li>
+        <li><a href="/tags">Tags</a></li>
+        <li><a href="/about">About Me</a></li>
  
                                         </ul>
                                 </div>
@@ -104,32 +104,32 @@
     <div class="row row-sm-height">		
         <div class="col-sm-12 col-sm-height">            
                 <a role="button" href="/tags/blackness" class="btn btn-default btn-sm"> blackness (2)</a>
-                <a role="button" href="/tags/furry" class="btn btn-default btn-sm"> furry (1)</a>
-                <a role="button" href="/tags/furry_lifestyle" class="btn btn-default btn-sm"> furry_lifestyle (1)</a>
-                <a role="button" href="/tags/tftuesday" class="btn btn-default btn-sm"> TFTuesday (1)</a>
-                <a role="button" href="/tags/identity_shift" class="btn btn-default btn-sm"> identity_shift (1)</a>
-                <a role="button" href="/tags/squirrel" class="btn btn-default btn-sm"> squirrel (1)</a>
-                <a role="button" href="/tags/f2m_transformation" class="btn btn-default btn-sm"> f2m_transformation (1)</a>
-                <a role="button" href="/tags/transformation" class="btn btn-default btn-sm"> transformation (1)</a>
-                <a role="button" href="/tags/race" class="btn btn-default btn-sm"> race (1)</a>
-                <a role="button" href="/tags/philosophy" class="btn btn-default btn-sm"> philosophy (1)</a>
-                <a role="button" href="/tags/behind_the_fursona" class="btn btn-default btn-sm"> behind_the_fursona (1)</a>
-                <a role="button" href="/tags/prose" class="btn btn-default btn-sm"> prose (1)</a>
+                <a role="button" href="/tags/cartoons" class="btn btn-default btn-sm"> cartoons (1)</a>
                 <a role="button" href="/tags/site_administration" class="btn btn-default btn-sm"> site_administration (1)</a>
                 <a role="button" href="/tags/gender" class="btn btn-default btn-sm"> gender (1)</a>
-                <a role="button" href="/tags/cougar" class="btn btn-default btn-sm"> cougar (1)</a>
-                <a role="button" href="/tags/furry_transformation" class="btn btn-default btn-sm"> furry_transformation (1)</a>
-                <a role="button" href="/tags/fiction" class="btn btn-default btn-sm"> fiction (1)</a>
-                <a role="button" href="/tags/biology" class="btn btn-default btn-sm"> biology (1)</a>
+                <a role="button" href="/tags/transformation" class="btn btn-default btn-sm"> transformation (1)</a>
                 <a role="button" href="/tags/creator_news" class="btn btn-default btn-sm"> creator_news (1)</a>
                 <a role="button" href="/tags/reality_shift" class="btn btn-default btn-sm"> reality_shift (1)</a>
-                <a role="button" href="/tags/m2f_transformation" class="btn btn-default btn-sm"> m2f_transformation (1)</a>
-                <a role="button" href="/tags/cartoons" class="btn btn-default btn-sm"> cartoons (1)</a>
-                <a role="button" href="/tags/politics" class="btn btn-default btn-sm"> politics (1)</a>
-                <a role="button" href="/tags/identity" class="btn btn-default btn-sm"> identity (1)</a>
+                <a role="button" href="/tags/fiction" class="btn btn-default btn-sm"> fiction (1)</a>
+                <a role="button" href="/tags/prose" class="btn btn-default btn-sm"> prose (1)</a>
+                <a role="button" href="/tags/cougar" class="btn btn-default btn-sm"> cougar (1)</a>
                 <a role="button" href="/tags/short_form" class="btn btn-default btn-sm"> short_form (1)</a>
-                <a role="button" href="/tags/clean" class="btn btn-default btn-sm"> clean (1)</a>
                 <a role="button" href="/tags/transgender_transformation" class="btn btn-default btn-sm"> transgender_transformation (1)</a>
+                <a role="button" href="/tags/furry_lifestyle" class="btn btn-default btn-sm"> furry_lifestyle (1)</a>
+                <a role="button" href="/tags/identity_shift" class="btn btn-default btn-sm"> identity_shift (1)</a>
+                <a role="button" href="/tags/behind_the_fursona" class="btn btn-default btn-sm"> behind_the_fursona (1)</a>
+                <a role="button" href="/tags/TFTuesday" class="btn btn-default btn-sm"> TFTuesday (1)</a>
+                <a role="button" href="/tags/identity" class="btn btn-default btn-sm"> identity (1)</a>
+                <a role="button" href="/tags/f2m_transformation" class="btn btn-default btn-sm"> f2m_transformation (1)</a>
+                <a role="button" href="/tags/furry" class="btn btn-default btn-sm"> furry (1)</a>
+                <a role="button" href="/tags/philosophy" class="btn btn-default btn-sm"> philosophy (1)</a>
+                <a role="button" href="/tags/clean" class="btn btn-default btn-sm"> clean (1)</a>
+                <a role="button" href="/tags/biology" class="btn btn-default btn-sm"> biology (1)</a>
+                <a role="button" href="/tags/m2f_transformation" class="btn btn-default btn-sm"> m2f_transformation (1)</a>
+                <a role="button" href="/tags/politics" class="btn btn-default btn-sm"> politics (1)</a>
+                <a role="button" href="/tags/squirrel" class="btn btn-default btn-sm"> squirrel (1)</a>
+                <a role="button" href="/tags/race" class="btn btn-default btn-sm"> race (1)</a>
+                <a role="button" href="/tags/furry_transformation" class="btn btn-default btn-sm"> furry_transformation (1)</a>
         </div>
     </div>
 </div>
@@ -176,6 +176,13 @@
                                 var pattern = t.generate(header.clientWidth, header.clientHeight);
                                 header.setAttribute('style', 'background-image: ' + pattern.dataUrl);                        
                         </script>
+
+                <script>
+                        BackgroundCheck.init({
+                                targets: '.intro-header,.navbar',
+                                images: '.intro-header'
+                        });
+                </script>
         </body>
 </html>
 

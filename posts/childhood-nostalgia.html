@@ -39,6 +39,7 @@
         <script src="/assets/js/d3.v3.min.js"></script>
         <script src="/assets/js/trianglify.min.js"></script>
         <script src="/assets/js/Please-compressed.js"></script>
+        <script src="/assets/js/background-check.min.js"></script>
                 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -46,7 +47,6 @@
                 <script src="/assets/js/html5shiv.js"></script>
                 <script src="/assets/js/respond.min.js"></script>
         <![endif]-->
-
         
         
 
@@ -71,9 +71,9 @@
                                 <!-- Collect the nav links, forms, and other content for toggling -->
                                 <div class="collapse navbar-collapse" id="navbar-collapse">
                                         <ul class="nav navbar-nav navbar-right">
-                                                        <li><a href="/about">About Me</a></li>
-        <li><a href="/tags">All Tags</a></li>
-        <li><a href="/posts">Archive</a></li>
+                                                        <li><a href="/posts">Archive</a></li>
+        <li><a href="/tags">Tags</a></li>
+        <li><a href="/about">About Me</a></li>
  
                                         </ul>
                                 </div>
@@ -113,7 +113,7 @@ Published on Tuesday, November 29, 2016<br>        Download as:                 
                     <a role="button" href="/tags/m2f_transformation" class="btn btn-default btn-xs">m2f_transformation</a>
                     <a role="button" href="/tags/reality_shift" class="btn btn-default btn-xs">reality_shift</a>
                     <a role="button" href="/tags/squirrel" class="btn btn-default btn-xs">squirrel</a>
-                    <a role="button" href="/tags/tftuesday" class="btn btn-default btn-xs">TFTuesday</a>
+                    <a role="button" href="/tags/TFTuesday" class="btn btn-default btn-xs">TFTuesday</a>
                     <a role="button" href="/tags/transformation" class="btn btn-default btn-xs">transformation</a>
                     <a role="button" href="/tags/transgender_transformation" class="btn btn-default btn-xs">transgender_transformation</a>
         </div>     
@@ -249,6 +249,13 @@ a case, Scrummy.”</p>
                                 var pattern = t.generate(header.clientWidth, header.clientHeight);
                                 header.setAttribute('style', 'background-image: ' + pattern.dataUrl);                        
                         </script>
+
+                <script>
+                        BackgroundCheck.init({
+                                targets: '.intro-header,.navbar',
+                                images: '.intro-header'
+                        });
+                </script>
         </body>
 </html>
 
