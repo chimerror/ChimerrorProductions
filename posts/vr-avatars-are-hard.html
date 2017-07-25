@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 
-        <title>Chimerror Productions - gender</title>
+        <title>Chimerror Productions - VR Avatars Are Hard</title>
         <meta name="description" content="Chimerror Productions" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
 
@@ -27,9 +27,9 @@
         <meta name="msapplication-tooltip" content="Chimerror Productions" />
         <meta name="msapplication-starturl" content="/" />
 
-        <meta property="og:title" content="Chimerror Productions - gender" />
+        <meta property="og:title" content="Chimerror Productions - VR Avatars Are Hard" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="http://chimerror.com/tags/gender" />
+        <meta property="og:url" content="http://chimerror.com/posts/vr-avatars-are-hard" />
         <!-- TODO: More social graph meta tags -->
 
         <script src="/assets/js/jquery.min.js"></script>
@@ -87,10 +87,23 @@
                         <div class="container">
                                 <div class="row">
                                         <div class="col-md-12">
-<div class="site-heading">
-    <img src="/assets/img/chimerror_logo_small_white.png" />
-    <h1>gender</h1>
+
+    
+<div class="post-heading">
+    <h1>VR Avatars Are Hard</h1>
+    <div class="meta">        
+Published on Tuesday, July 25, 2017<br>            </div>
+        <div class="tags">
+                    <a role="button" href="/tags/blender" class="btn btn-default btn-xs">blender</a>
+                    <a role="button" href="/tags/htc_vive" class="btn btn-default btn-xs">htc_vive</a>
+                    <a role="button" href="/tags/leap_motion" class="btn btn-default btn-xs">leap_motion</a>
+                    <a role="button" href="/tags/modelling" class="btn btn-default btn-xs">modelling</a>
+                    <a role="button" href="/tags/programming" class="btn btn-default btn-xs">programming</a>
+                    <a role="button" href="/tags/unity" class="btn btn-default btn-xs">unity</a>
+                    <a role="button" href="/tags/virtual_reality" class="btn btn-default btn-xs">virtual_reality</a>
+        </div>     
 </div>
+
                                         </div>
                                 </div>
                         </div>
@@ -100,66 +113,18 @@
                 <div class="container">
                         <div class="row">
                                 <div id="content" class="col-md-12">
-                                        <div class="container-sm-height">
-    <div class="row row-sm-height">
-        <div class="col-sm-8 right-border col-sm-height">
-                    <div class="post-list">
-            <a href="/posts/childhood-nostalgia">
-                <h3 class="post-title">Childhood Nostalgia</h3>
-            </a>
-            <p class="post-meta">Posted on Tuesday, November 29, 2016</p>      
-        </div>   
+                                        
+
+<p>So the first thing I want in VR is an avatar. That is, I want to have a 3D model follow my body while I’m in VR. You’d think this would be common in VR, but it seems many VR experiences decide to skip it. In some regards, this is because it’s actually pretty hard.</p>
+<p>The first issue is that 3D models usually used for games have heads. You can in theory stick the camera into the head, but then you see the backside of head’s faces if it has any. Or as I was running into my most recent case, large eyeballs and modelled bangs. The solution to this is to keep the head “separate” from the body. But if you do that incorrectly, then your model has no head. You need the model to have a head when it’s making a shadow or being viewed in a mirror, but not otherwise. Unity actually has a “shadow only” setting for this, but you end up having to duplicate the head nonetheless. Either way, you need to be able to set this at modelling time, not after you have the model. That puts some limitations on your artist, and limits the ability to use characters modelled by others without some extra work.</p>
+<p>The next issue is getting the gaze and body to sync up. This is actually not that hard. You have the model, you can transform it easily, and you have the information from the VR headset. The only things to keep in mind is that you want only the X and Z parts of the position, and only the rotation around the Y axis for the rotation. (We’re using Unity axes here, which are X to the right, Z forward, and Y up.) You might think the Y part of the position would be good for setting the height, but you then run into the next problem...</p>
+<p>Height becomes a problem for two reasons. The first is that the position of the headset will move up and down slightly as you move around. The second is the more obvious fact that your players will be of different heights. I had a clever moment where I adjust the scaling of the Y axis so that the player is always the same height as the character. I’ve not moved it over to my new stack yet, but I’ll see if that can be automated rather than hard coded like it is now.</p>
+<p>Another problem with an avatar is performing the inverse kinematics (IK) for the hands and gaze. Well, in theory this is a problem, but Unity has IK libraries built in, so map the gaze to where the player is looking, and the hands to the hand controllers, and... Well, it works, but it’s still going to take fiddling.</p>
+<p>I’m however, going another level beyond that is kind of hard. I also have a LeapMotion controller, which is actually great at taking in hand motions. But I’ve not gotten that to work yet, I’ll keep playing with it.</p>
+<p>Anyway, this was just mainly a test post, but figured I’ll kill two birds with one stone!</p>
 
 
-            <nav>
-                <ul class="pager">
-                    <li class="previous">                
-                    </li>
-                    <li class="next">
-                    </li>
-                </ul>
-            </nav>
-            <hr class="visible-xs-block" />
-        </div>
-		
-        <div class="col-sm-4 col-sm-height">
-                <a role="button" href="/tags/site_administration" class="btn btn-default btn-xs">site_administration (2)</a>
-                <a role="button" href="/tags/creator_news" class="btn btn-default btn-xs">creator_news (2)</a>
-                <a role="button" href="/tags/blackness" class="btn btn-default btn-xs">blackness (2)</a>
-                <a role="button" href="/tags/programming" class="btn btn-default btn-xs">programming (1)</a>
-                <a role="button" href="/tags/modelling" class="btn btn-default btn-xs">modelling (1)</a>
-                <a role="button" href="/tags/virtual_reality" class="btn btn-default btn-xs">virtual_reality (1)</a>
-                <a role="button" href="/tags/unity" class="btn btn-default btn-xs">unity (1)</a>
-                <a role="button" href="/tags/blender" class="btn btn-default btn-xs">blender (1)</a>
-                <a role="button" href="/tags/leap_motion" class="btn btn-default btn-xs">leap_motion (1)</a>
-                <a role="button" href="/tags/htc_vive" class="btn btn-default btn-xs">htc_vive (1)</a>
-                <a role="button" href="/tags/prose" class="btn btn-default btn-xs">prose (1)</a>
-                <a role="button" href="/tags/short_form" class="btn btn-default btn-xs">short_form (1)</a>
-                <a role="button" href="/tags/furry_lifestyle" class="btn btn-default btn-xs">furry_lifestyle (1)</a>
-                <a role="button" href="/tags/behind_the_fursona" class="btn btn-default btn-xs">behind_the_fursona (1)</a>
-                <a role="button" href="/tags/identity" class="btn btn-default btn-xs">identity (1)</a>
-                <a role="button" href="/tags/philosophy" class="btn btn-default btn-xs">philosophy (1)</a>
-                <a role="button" href="/tags/biology" class="btn btn-default btn-xs">biology (1)</a>
-                <a role="button" href="/tags/politics" class="btn btn-default btn-xs">politics (1)</a>
-                <a role="button" href="/tags/race" class="btn btn-default btn-xs">race (1)</a>
-                <a role="button" href="/tags/fiction" class="btn btn-default btn-xs">fiction (1)</a>
-                <a role="button" href="/tags/transformation" class="btn btn-default btn-xs">transformation (1)</a>
-                <a role="button" href="/tags/cartoons" class="btn btn-default btn-xs">cartoons (1)</a>
-                <a role="button" href="/tags/furry" class="btn btn-default btn-xs">furry (1)</a>
-                <a role="button" href="/tags/transgender_transformation" class="btn btn-default btn-xs">transgender_transformation (1)</a>
-                <a role="button" href="/tags/furry_transformation" class="btn btn-default btn-xs">furry_transformation (1)</a>
-                <a role="button" href="/tags/m2f_transformation" class="btn btn-default btn-xs">m2f_transformation (1)</a>
-                <a role="button" href="/tags/f2m_transformation" class="btn btn-default btn-xs">f2m_transformation (1)</a>
-                <a role="button" href="/tags/squirrel" class="btn btn-default btn-xs">squirrel (1)</a>
-                <a role="button" href="/tags/cougar" class="btn btn-default btn-xs">cougar (1)</a>
-                <a role="button" href="/tags/reality_shift" class="btn btn-default btn-xs">reality_shift (1)</a>
-                <a role="button" href="/tags/identity_shift" class="btn btn-default btn-xs">identity_shift (1)</a>
-                <a role="button" href="/tags/gender" class="btn btn-primary btn-xs">gender (1)</a>
-                <a role="button" href="/tags/clean" class="btn btn-default btn-xs">clean (1)</a>
-                <a role="button" href="/tags/TFTuesday" class="btn btn-default btn-xs">TFTuesday (1)</a>
-        </div>
-    </div>
-</div>
+
                                 </div>
                         </div>
                 </div>
